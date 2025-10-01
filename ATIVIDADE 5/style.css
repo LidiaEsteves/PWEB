@@ -1,0 +1,38 @@
+.caixa {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+}
+
+h2::before {
+  content: "Cinza";
+  color: white;
+  font-size: 2rem;
+}
+
+/* Até 420px */
+@media (max-width: 420px) {
+  .caixa { background-color: gray; }
+  h2::before { content: "Cinza"; }
+}
+
+/* 421px até 768px */
+@media (min-width: 421px) and (max-width: 768px) {
+  .caixa { background-color: orange; }
+  h2::before { content: "Laranja"; }
+}
+
+/* 769px até 1920px */
+@media (min-width: 769px) and (max-width: 1920px) {
+  .caixa { background-color: purple; }
+  h2::before { content: "Roxo"; }
+}
+
+/* Maior que 1920px */
+@media (min-width: 1921px) {
+  .caixa { background-color: green; }
+  h2::before { content: "Verde"; }
+}
