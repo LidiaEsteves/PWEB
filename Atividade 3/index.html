@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Responsivo - Atividade 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Design Responsivo</h1>
+    <p>Atividade 3 – HTML5 com uso de HTML Semântico</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#introducao">Introdução</a></li>
+        <li><a href="#objetivo">Objetivo</a></li>
+        <li><a href="#importancia">Importância</a></li>
+        <li><a href="#tecnicas">Técnicas</a></li>
+        <li><a href="#frameworks">Frameworks</a></li>
+        <li><a href="#exemplos">Exemplos</a></li>
+        <li><a href="#conclusao">Conclusão</a></li>
+        <li><a href="#referencias">Referências</a></li>
+    </ul>
+</nav>
+
+<main>
+
+   
+    <section id="introducao">
+        <h2>Introdução</h2>
+
+        <p>
+            O Design Responsivo é um princípio de desenvolvimento web que surgiu da necessidade de adaptar,
+            de uma única vez, sites e páginas virtuais a diversos tamanhos de tela, sem a necessidade de retrabalho
+            ou criação de vários códigos distintos. No passado, quando ainda não era comum acessar páginas por
+            meio de dispositivos móveis, essa prática não era necessária, já que se acessava conteúdo web apenas
+            por meio de computadores.
+        </p>
+
+        <p>
+            Nessa época, o programador escrevia um único código voltado exclusivamente a esse formato.
+            Contudo, com o avanço tecnológico, essa técnica tornou-se cada vez mais imprescindível na
+            atualidade. Segundo matéria da Agência Brasil, até 2014 o computador era o dispositivo mais
+            utilizado para acessar a internet, presente em 80% das conexões. Já em 2023, esse número havia
+            caído para 38% dos usuários.
+        </p>
+
+        <p>
+            Com o aumento do uso de smartphones e tablets, o Design Responsivo deixou de ser apenas um
+            diferencial e passou a ser essencial. Ele permite que o conteúdo, o layout e as funcionalidades de
+            um site se ajustem automaticamente ao tamanho da tela utilizada, seja em computadores, celulares
+            ou outros dispositivos. Isso é possível por meio de técnicas como media queries, grids flexíveis e
+            imagens adaptativas, garantindo uma experiência consistente e otimizada para o usuário.
+        </p>
+
+        <p>
+            Além disso, o Design Responsivo impacta diretamente na performance, no SEO (otimização para
+            motores de busca) e na acessibilidade. Sites responsivos geralmente carregam mais rápido, oferecem
+            uma navegação intuitiva e atendem melhor às diretrizes de acessibilidade, resultando em maior
+            engajamento e satisfação do usuário. À medida que o acesso móvel continua crescendo, investir em
+            uma experiência web verdadeiramente responsiva tornou-se essencial para garantir relevância,
+            eficiência e alcance em um mundo digital cada vez mais diversificado.
+        </p>
+    </section>
+
+   
+    <section id="objetivo">
+        <h2>Objetivo</h2>
+        <p>
+            O objetivo principal do Design Responsivo é garantir que um site proporcione a melhor experiência
+            possível ao usuário, independentemente do dispositivo ou tamanho de tela utilizados para acessá-lo.
+            Isso envolve manter a legibilidade, a navegabilidade e a funcionalidade de todos os elementos,
+            adaptando layouts, imagens e recursos interativos de forma fluida. Dessa maneira, busca-se oferecer
+            uma experiência consistente e intuitiva, aumentando o engajamento e a satisfação do público.
+        </p>
+    </section>
+
+  
+    <section id="importancia">
+        <h2>Importância</h2>
+
+        <p>
+            Com o crescimento exponencial do acesso à internet por meio de dispositivos móveis, a responsividade
+            deixou de ser opcional. Hoje, ela está diretamente ligada a fatores como:
+        </p>
+
+        <ul>
+            <li><strong>Experiência do Usuário (UX):</strong> Navegação fluida, textos legíveis e imagens bem posicionadas.</li>
+            <li><strong>Performance:</strong> Redução do tempo de carregamento por meio de elementos adaptáveis.</li>
+            <li><strong>SEO:</strong> O Google considera a responsividade um critério importante para ranqueamento.</li>
+            <li><strong>Acessibilidade:</strong> Inclusão de diferentes públicos, incluindo pessoas com limitações visuais ou motoras.</li>
+        </ul>
+    </section>
+
+    
+    <section id="tecnicas">
+        <h2>Técnicas Utilizadas no Design Responsivo</h2>
+
+        <article>
+            <h3>2.1 Media Queries</h3>
+
+            <img src="media-queries.jpg" alt="Exemplo de Media Queries">
+
+            <p>
+                São instruções de CSS que permitem aplicar estilos diferentes de acordo com características do
+                dispositivo, como largura da tela, altura, orientação e resolução.
+            </p>
+
+            <pre>
+/* Exemplo */
+@media (max-width: 600px) {
+    .container { padding: 10px; }
+}
+            </pre>
+        </article>
+
+        <article>
+            <h3>2.2 Grids Flexíveis</h3>
+
+            <img src="grids-flexiveis.jpg" alt="Exemplo de grids flexíveis">
+
+            <p>
+                Utilização de sistemas de grade baseados em porcentagens, e não em valores fixos em pixels,
+                permitindo que os elementos da página se ajustem proporcionalmente. Ferramentas como Flexbox
+                e CSS Grid são amplamente utilizadas.
+            </p>
+        </article>
+
+        <article>
+            <h3>2.3 Imagens e Mídias Adaptativas</h3>
+
+            <img src="imagens-adaptativas.jpg" alt="Exemplo de imagens adaptativas">
+
+            <p>
+                Aplicação de imagens que mudam de tamanho ou resolução conforme o dispositivo, evitando
+                carregamento desnecessário de arquivos pesados. Uso do atributo <code>srcset</code> no HTML
+                para carregar diferentes resoluções.
+            </p>
+        </article>
+
+        <article>
+            <h3>2.4 Tipografia Responsiva</h3>
+
+         
+            <p>
+                A tipografia responsiva consiste em ajustar o tamanho do texto de acordo com o dispositivo e a tela
+                utilizada. Utilizando unidades relativas, como em, rem ou vw, o conteúdo textual mantém legibilidade
+                e harmonia visual em diferentes tamanhos de tela, garantindo uma experiência de leitura confortável
+                tanto em computadores quanto em smartphones e tablets.
+            </p>
+        </article>
+
+        <article>
+            <h3>2.5 Layout Mobile-First</h3>
+
+            
+            <p>
+                O layout Mobile-First é uma abordagem de desenvolvimento em que o design é planejado
+                primeiramente para telas pequenas e depois adaptado para telas maiores. Essa técnica prioriza a
+                experiência do usuário em dispositivos móveis, facilita a organização do conteúdo e otimiza o
+                desempenho do site, evitando sobrecarga de elementos desnecessários.
+            </p>
+        </article>
+
+    </section>
+
+    
+    <section id="frameworks">
+        <h2>Frameworks Populares para Design Responsivo</h2>
+
+        <article>
+            <h3>3.1 Bootstrap</h3>
+            <p>
+                Um dos frameworks mais conhecidos. Oferece componentes prontos, sistema de grid responsivo e
+                compatibilidade com diversos navegadores. Permite criação rápida de protótipos e layouts consistentes.
+            </p>
+        </article>
+
+        <article>
+            <h3>3.2 Foundation</h3>
+            <p>
+                Criado pela Zurb, foca na responsividade e acessibilidade. Possui sistema de grid flexível e ferramentas
+                para prototipagem.
+            </p>
+        </article>
+
+        <article>
+            <h3>3.3 Tailwind CSS</h3>
+            <p>
+                Framework utilitário que permite criar layouts responsivos sem escrever CSS personalizado do zero.
+                Facilita a aplicação de classes condicionais para diferentes tamanhos de tela.
+            </p>
+        </article>
+    </section>
+
+  
+    <section id="exemplos">
+        <h2>Exemplos Práticos de Aplicação</h2>
+
+        <article>
+            <h3>4.1 Site de Notícias</h3>
+
+            <img src="site-noticias.jpg" alt="Exemplo de site de notícias responsivo">
+
+            <p>
+                Layout ajusta automaticamente colunas de artigos: três colunas no desktop, duas no tablet e uma no
+                smartphone.
+            </p>
+        </article>
+
+        <article>
+            <h3>4.2 Loja Virtual</h3>
+
+            <img src="loja-virtual.jpg" alt="Exemplo de loja virtual responsiva">
+
+            <p>
+                Imagens de produtos adaptadas para cada dispositivo. Botões e menus otimizados para toque em telas
+                menores.
+            </p>
+        </article>
+
+        <article>
+            <h3>4.3 Blog Pessoal</h3>
+
+            <img src="blog-responsivo.jpg" alt="Exemplo de blog responsivo">
+
+            <p>
+                Tipografia responsiva e menus simplificados para garantir leitura agradável em qualquer dispositivo.
+            </p>
+        </article>
+    </section>
+
+    <!-- CONCLUSÃO -->
+    <section id="conclusao">
+        <h2>Conclusão</h2>
+
+        <p>
+            O Design Responsivo é um pilar fundamental no desenvolvimento web moderno. Mais do que uma
+            tendência, ele é uma resposta às demandas de um público que acessa conteúdo de múltiplas formas e em
+            diferentes contextos. Ao adotar técnicas como media queries, grids flexíveis e imagens adaptativas, e ao
+            utilizar frameworks que agilizam esse processo, desenvolvedores garantem que seus projetos sejam acessíveis,
+            funcionais e visualmente consistentes.
+        </p>
+
+        <p>
+            Investir em responsividade não apenas melhora a experiência do usuário, mas também aumenta a
+            competitividade e a relevância de qualquer presença digital no cenário atual.
+        </p>
+    </section>
+
+    <!-- REFERÊNCIAS -->
+    <section id="referencias">
+        <h2>Referências</h2>
+
+        <ul>
+            <li>PM3. Design responsivo: o que é, pilares e por que é tão importante? Acesso em: 13 ago. 2025.</li>
+            <li>ALURA. Por que um design responsivo é importante para potencializar seu marketing? Acesso em: 13 ago. 2025.</li>
+            <li>MICROSOFT. Responsive design techniques. Acesso em: 13 ago. 2025.</li>
+            <li>ENVOX. Design responsivo: 5 frameworks que facilitarão sua vida. Acesso em: 13 ago. 2025.</li>
+            <li>AGÊNCIA BRASIL. Apenas 37% de quem usa internet apenas no celular checam informações. Acesso em: 13 ago. 2025.</li>
+            <li>MDN Web Docs. Responsive Web Design. Acesso em: 13 ago. 2025.</li>
+            <li>MDN Web Docs. Usando media queries. Acesso em: 13 ago. 2025.</li>
+            <li>MDN Web Docs. Teste suas habilidades: Design responsivo e media queries. Acesso em: 13 ago. 2025.</li>
+            <li>W3C. Media Queries Level 3. Acesso em: 13 ago. 2025.</li>
+            <li>W3C. Princípios de Design Responsivo. Acesso em: 13 ago. 2025.</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>Atividade desenvolvida por Lídia Oliveira Esteves • 2025</p>
+</footer>
+
+</body>
+</html>

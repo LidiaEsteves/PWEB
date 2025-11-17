@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #222;
+    padding-top: 80px; /* espaço para o menu fixo */
+}
+
+
+header {
+    text-align: center;
+    background: #0056b3;
+    color: white;
+    padding: 25px 15px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+
+nav {
+    background: #003d80;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: #004a99;
+}
+
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    font-size: 1.6rem;
+    color: #003d80;
+    margin-bottom: 15px;
+}
+
+
+article {
+    margin-bottom: 25px;
+}
+
+article h3 {
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+/* ============================
+   IMAGENS
+============================ */
+img {
+    width: 100%;
+    max-width: 650px;
+    display: block;
+    margin: 10px auto 20px auto;
+    border-radius: 5px;
+}
+
+
+ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+
+pre {
+    background: #eee;
+    padding: 12px;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+
+footer {
+    background: #003d80;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
